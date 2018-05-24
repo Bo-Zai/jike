@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>极客-购物车</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
+    <link rel="icon" href="img/jk.ico">
+</head>
+<body>
+    <div id="main">
+        <div id="header"></div>
+        <div id="container">
+            <div class="cart_head">
+                <h2>我的购物车</h2>
+            </div>
+            <div class="cart-content">
+                <div class="cart_list">
+                    <ul class="list_box">
+                        <li>
+                            <input id="check_all" type="checkbox" />&nbsp;&nbsp;全选
+                        </li>
+                        <li>商品名称</li>
+                        <li>单价</li>
+                        <li>数量</li>
+                        <li>小计</li>
+                        <li>操作</li>
+                    </ul>
+                </div>
+                <div class="cart_list_body">
+                    <div class="item_box">
+                        <ul class="item_list">
+                            <li class="col_check">
+                                <input class="check_option" data-item="check_option" type="checkbox"/>
+                            </li>
+                            <li class="col_img" data-item="img">
+                                <img class="pro_img" src="img/init.png" data-src="img/cart/pro_11.jpg" alt=""/>
+                            </li>
+                            <li class="col_name" data-item="name">
+                                佳能（Canon）EOS 5D 单反套机
+                            </li>
+                            <li class="col_price" data-item="price">
+                                24998元
+                            </li>
+                            <li class="col_num">
+                                <span class="change_num">
+                                    <input class="cart_btn" data-btn="minus" type="button" value="-"/>
+                                    <input class="cart_count" data-btn="count" type="text" value="1"/>
+                                    <input class="cart_btn" data-btn="add" type="button" value="+"/>
+                                </span>
+                            </li>
+                            <li class="col_total" data-item="total_price">
+                                24998元
+                            </li>
+                            <li class="col_action">
+                                <a class="del_item" data-item="del">×</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item_box">
+                        <ul class="item_list">
+                            <li class="col_check">
+                                <input class="check_option" data-item="check_option" type="checkbox"/>
+                            </li>
+                            <li class="col_img" data-item="img">
+                                <img class="pro_img" src="img/init.png" data-src="img/cart/hp_08.jpg" alt=""/>
+                            </li>
+                            <li class="col_name" data-item="name">
+                                惠普（HP）薄锐ENVY 13.3英寸超轻薄笔记本
+                            </li>
+                            <li class="col_price" data-item="price">
+                                5979元
+                            </li>
+                            <li class="col_num">
+                                <span class="change_num">
+                                    <input class="cart_btn" data-btn="minus" type="button" value="-"/>
+                                    <input class="cart_count" data-btn="count" type="text" value="1"/>
+                                    <input class="cart_btn" data-btn="add" type="button" value="+"/>
+                                </span>
+                            </li>
+                            <li class="col_total" data-item="total_price">
+                                5979元
+                            </li>
+                            <li class="col_action">
+                                <a class="del_item" data-item="del">×</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="payment">
+                        <div class="pro_total">
+                            已选&nbsp;&nbsp;<b id="cart_pro_total">0</b>&nbsp;&nbsp;件商品
+                        </div>
+                        <div class="price_total">
+                            合计：
+                            <b id="cart_price_total">0</b>
+                            元
+                        </div>
+                        <div class="cart_submit" id="cart_submit">
+                            确认结算
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/base.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
