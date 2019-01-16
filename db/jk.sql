@@ -1,31 +1,17 @@
 SET NAMES UTF8;
-#É¾³ýÊý¾Ý¿âjk,Èç¹û´æÔÚµÄ»°
+#åˆ é™¤æ•°æ®åº“jk,å¦‚æžœå­˜åœ¨çš„è¯
 DROP  DATABASE  IF  EXISTS  jk;
-#ÐÂ½¨Êý¾Ý¿âjk
+#æ–°å»ºæ•°æ®åº“jk
 CREATE DATABASE  jk CHARSET=UTF8;
-#½øÈëÊý¾Ý¿âjk
+#è¿›å…¥æ•°æ®åº“jk
 USE jk;
-#ÐÂ½¨±í¸ñÓÃ»§ÐÅÏ¢±í£¨jk_user£©
+#æ–°å»ºè¡¨æ ¼ç”¨æˆ·ä¿¡æ¯è¡¨ï¼ˆjk_userï¼‰
 CREATE TABLE jk_user(
 	uid INT PRIMARY KEY AUTO_INCREMENT,
 	uname VARCHAR(32),
 	upwd VARCHAR(32),
 	email VARCHAR(64),
 	phone VARCHAR(16) NOT NULL UNIQUE,
+	avatar VARCHAR(128),
 	user_name VARCHAR(32),
-	gender INT
 );
-#ÐÂ½¨ÉÌÆ·±í£¨jk_laptop£©
-CREATE TABLE  jk_laptop(
-	lid INT PRIMARY KEY AUTO_INCREMENT,
-	product_id INT,
-	title VARCHAR(128),
-	subtitle VARCHAR(128),
-	price DECIMAL(10,2),
-	spec VARCHAR(64),
-	name VARCHAR(32),
-	memory VARCHAR(32),
-	details VARCHAR(1024),
-);
-
-
