@@ -1,6 +1,8 @@
-# jike
-极客商城项目是一个数码产品类商城demo，是我的一个个人（入门）项目，综合了我2017年所学习的所有前端知识，此项目中使用到了CSS3，jQuery，ajax，以及php和MySQL
+### 极客商城
+一个简约风格商城网站，初学前端时的练手项目。项目中使用了HTML5、CSS3、jQuery、PHP、MySQL等技术。
+>由个人独立完成界面设计、静态页面和前端交互js编写，以及php+mysql实现简单的注册、登录、退出
 
-项目演示网址：http://liuboweb.top
-
-or:https://bo-zai.github.io/jike/
+### 使用技术
+- 1、项目中大部分动画效果使用了css3的新特性transform和animation。
+- 2、使用jQuery简化dom操作，使用jQuery中的ajax完成前后端的>数据交互
+- 3、后端使用php+mysql实现用户注册登录等操作
